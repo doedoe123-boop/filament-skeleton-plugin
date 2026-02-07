@@ -1,0 +1,19 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('sharepoint_logs', function (Blueprint $table) {
+            $table->id();
+
+            // Reserved for future audit logging / sync tracking
+
+            $table->timestamps();
+        });
+    }
+};

@@ -1,53 +1,52 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "doedoe123-boop/sharepoint",
+    "description": "A zero-config SharePoint File Manager for Filament. Browse, preview, and upload files directly to SharePoint using Microsoft Graph API without storing them locally.",
     "keywords": [
-        ":vendor_name",
+        "doedoe123-boop",
         "laravel",
-        ":package_slug"
+        "filament",
+        "sharepoint",
+        "microsoft-graph"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/doedoe123-boop/sharepoint",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/doedoe123-boop/sharepoint/issues",
+        "source": "https://github.com/doedoe123-boop/sharepoint"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Nelson",
+            "email": "asum.nelson@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
+        "php": "^8.2",
+        "filament/filament": "^5.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
+        "guzzlehttp/guzzle": "^7.10",
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.9",
-        "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^8.0",
+        "nunomaduro/collision": "^8.0",
+        "nunomaduro/larastan": "^2.9",
+        "orchestra/testbench": "^9.0",
         "pestphp/pest": "^2.1",
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Doedoe123boop\\Sharepoint\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Doedoe123boop\\Sharepoint\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Doedoe123boop\\Sharepoint\\SharepointServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Sharepoint": "Doedoe123boop\\Sharepoint\\Facades\\Sharepoint"
             }
         }
     },
