@@ -20,9 +20,9 @@ A SharePoint integration plugin for [Filament](https://filamentphp.com) Admin Pa
 
 ## Requirements
 
-- PHP 8.1+
-- Laravel 10+
-- Filament 3.x
+- PHP 8.2+
+- Laravel 11+
+- Filament 5.x
 - An Azure AD / Entra ID App Registration with `Sites.ReadWrite.All` application permission
 
 ## Installation
