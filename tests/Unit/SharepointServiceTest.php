@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Http;
-use Doedoe123boop\Sharepoint\Services\SharepointService;
 use Doedoe123boop\Sharepoint\Contracts\TokenServiceInterface;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointApiException;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointAuthException;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointFileNotFoundException;
+use Doedoe123boop\Sharepoint\Services\SharepointService;
+use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
     config([

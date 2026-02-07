@@ -1,7 +1,6 @@
 <?php
 
 use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
-use Illuminate\Support\Facades\Http;
 
 it('runs the test-connection command successfully', function () {
     $this->mock(SharepointServiceInterface::class, function ($mock) {
