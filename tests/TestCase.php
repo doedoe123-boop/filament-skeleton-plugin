@@ -4,6 +4,7 @@ namespace Doedoe123boop\Sharepoint\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
+use Doedoe123boop\Sharepoint\SharepointServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -15,7 +16,6 @@ use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Doedoe123boop\Sharepoint\SharepointServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -2,16 +2,16 @@
 
 namespace Doedoe123boop\Sharepoint;
 
-use Spatie\LaravelPackageTools\Package;
-use Livewire\Features\SupportTesting\Testable;
-use Doedoe123boop\Sharepoint\Testing\TestsSharepoint;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Doedoe123boop\Sharepoint\Commands\SharepointCommand;
+use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Doedoe123boop\Sharepoint\Contracts\TokenServiceInterface;
 use Doedoe123boop\Sharepoint\Services\GraphTokenService;
 use Doedoe123boop\Sharepoint\Services\SharepointService;
-use Doedoe123boop\Sharepoint\Contracts\TokenServiceInterface;
-use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Doedoe123boop\Sharepoint\Testing\TestsSharepoint;
+use Livewire\Features\SupportTesting\Testable;
+use Spatie\LaravelPackageTools\Commands\InstallCommand;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class SharepointServiceProvider extends PackageServiceProvider
 {

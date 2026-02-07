@@ -2,8 +2,8 @@
 
 namespace Doedoe123boop\Sharepoint\Facades;
 
-use Illuminate\Support\Facades\Facade;
 use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Doedoe123boop\Sharepoint\Services\SharepointService

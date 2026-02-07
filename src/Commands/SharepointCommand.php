@@ -2,8 +2,8 @@
 
 namespace Doedoe123boop\Sharepoint\Commands;
 
-use Illuminate\Console\Command;
 use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Illuminate\Console\Command;
 
 class SharepointCommand extends Command
 {
@@ -15,7 +15,7 @@ class SharepointCommand extends Command
     {
         $folder = $this->option('folder');
 
-        $this->info("Connecting to SharePoint...");
+        $this->info('Connecting to SharePoint...');
         $this->newLine();
 
         try {
@@ -32,7 +32,7 @@ class SharepointCommand extends Command
             return self::SUCCESS;
         }
 
-        $this->info("Connected successfully! Found " . count($items) . " item(s) in '{$folder}':");
+        $this->info('Connected successfully! Found ' . count($items) . " item(s) in '{$folder}':");
         $this->newLine();
 
         $this->table(

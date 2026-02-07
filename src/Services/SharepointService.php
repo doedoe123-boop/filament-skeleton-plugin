@@ -2,13 +2,13 @@
 
 namespace Doedoe123boop\Sharepoint\Services;
 
-use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\Http;
+use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
 use Doedoe123boop\Sharepoint\Contracts\TokenServiceInterface;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointApiException;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointAuthException;
-use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
 use Doedoe123boop\Sharepoint\Exceptions\SharepointFileNotFoundException;
+use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Http;
 
 class SharepointService implements SharepointServiceInterface
 {

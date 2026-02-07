@@ -2,21 +2,21 @@
 
 namespace Doedoe123boop\Sharepoint\Pages;
 
-use Filament\Pages\Page;
+use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Doedoe123boop\Sharepoint\SharepointPlugin;
 use Filament\Actions\Action;
-use Filament\Support\Enums\Width;
-use Illuminate\Support\Facades\Log;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Forms\Components\FileUpload;
-use Doedoe123boop\Sharepoint\SharepointPlugin;
-use Doedoe123boop\Sharepoint\Contracts\SharepointServiceInterface;
+use Filament\Pages\Page;
+use Filament\Support\Enums\Width;
+use Illuminate\Support\Facades\Log;
 
 class SharepointFileBrowser extends Page
 {
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cloud';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-cloud';
 
-    protected static string|\UnitEnum|null $navigationGroup = 'SharePoint';
+    protected static string | \UnitEnum | null $navigationGroup = 'SharePoint';
 
     protected static ?string $slug = 'sharepoint/files';
 
